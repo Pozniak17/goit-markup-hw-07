@@ -93,7 +93,7 @@ img {
   color: darkorchid;
 }
 
-.accent {
+.header-logo__accent {
   color: var(--accent);
 }
 
@@ -103,11 +103,11 @@ img {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-link {
+.site-nav__link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,17 +125,17 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent);
 }
 
 /* Підсвічування поточної сторінки */
-.current {
+.site-nav__link--current {
   color: var(--accent);
 }
 
-.current::after {
+.site-nav__link--current::after {
   position: absolute;
   display: block;
   content: '';
@@ -152,11 +152,11 @@ img {
 }
 
 /* Псевдокласс соседа - даётся только между соседом */
-.contact .item + .item {
+.contact .contact__item + .contact__item {
   margin-left: 50px;
 }
 
-.contact-link {
+.contact__link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -174,12 +174,12 @@ img {
   align-items: center;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent);
 }
 
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
