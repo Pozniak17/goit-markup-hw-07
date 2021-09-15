@@ -258,7 +258,12 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.features-title {
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+}
+
+.section__name {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -268,16 +273,15 @@ img {
   margin-bottom: 10px;
 }
 
-.features-text {
+.section__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* Приклади та команда мають однакові параметри, 
 section-title - універсальний клас для h2 */
-.section-title {
+.section__title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
