@@ -210,21 +210,14 @@ img {
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
-}
 
-.hero__button {
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--primary-bg-color);
-  background-color: var(--accent);
-  cursor: pointer;
-  border: transparent;
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+.hero__button {
   padding: 10px 32px;
 }
 
@@ -796,7 +789,7 @@ section-title - універсальний клас для h2 */
   border-radius: 4px;
   margin-left: 12px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
