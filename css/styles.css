@@ -293,21 +293,21 @@ section-title - універсальний клас для h2 */
   padding-top: 0;
 }
 
-.example-list {
+.example__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.example-list .item:not(:last-child) {
+.example__item:not(:last-child) {
   margin-right: 30px;
 }
 
 /* Лейбел до карток */
-.thumb-example {
+.example__thumb {
   position: relative;
 }
 
-.label-text-example {
+.example__text {
   position: absolute;
   display: flex;
   align-items: center;
@@ -319,11 +319,13 @@ section-title - універсальний клас для h2 */
   background: rgba(47, 48, 58, 0.8);
 }
 
-.thumb-example .features-title {
+.example__thumb .section__name {
   color: var(--primary-bg-color);
   margin: 0;
   text-align: center;
 }
+
+/* team */
 .team {
   background-color: var(--secondary-bg-color);
 }
