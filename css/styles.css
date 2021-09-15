@@ -71,29 +71,33 @@ img {
   align-items: center;
 }
 
-.header-logo {
+.logo {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  color: #000000;
-  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
+  text-decoration: none;
   line-height: 1.19;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-logo:hover,
-.header-logo:focus {
+.page-header__logo {
+  padding-top: 25px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
+  color: #000000;
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
   color: darkorchid;
 }
 
-.header-logo__accent {
+.logo__label {
   color: var(--accent);
 }
 
@@ -186,7 +190,7 @@ img {
 
 /* Стилі для index.html */
 /* Hero */
-.hero-title {
+.hero__title {
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -197,7 +201,18 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.button {
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+}
+
+.hero__button {
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -210,11 +225,10 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   padding: 10px 32px;
 }
 
-.hero-button:hover {
+.hero__button:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -398,7 +412,7 @@ section-title - універсальний клас для h2 */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primary-bg-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -956,7 +970,7 @@ section-title - універсальний клас для h2 */
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form .hero-button {
+.modal-form .hero__button {
   display: block;
   margin: 0 auto;
   width: 200px;
