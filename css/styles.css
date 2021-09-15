@@ -237,20 +237,20 @@ img {
   padding-bottom: 94px;
 }
 
-.features-list {
+.section__list {
   display: flex;
   justify-content: center;
 }
 
-.features-list .item {
+.section__item {
   width: 270px;
 }
 
-.features-list .item:not(:last-child) {
+.section__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-icon-wrap {
+.section__container {
   display: flex;
   justify-content: center;
   padding: 25px 100px;
