@@ -330,7 +330,35 @@ section-title - універсальний клас для h2 */
   background-color: var(--secondary-bg-color);
 }
 
-.team-title {
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  /* flex-wrap: wrap;
+  margin-right: -30px; */
+}
+
+.team__set {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__set {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.team__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team__title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -342,26 +370,6 @@ section-title - універсальний клас для h2 */
   line-height: 1.19;
   margin-top: 10px;
   margin-bottom: 16px;
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  /* flex-wrap: wrap;
-  margin-right: -30px; */
-}
-
-.team-set {
-  width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-set {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
 }
 
 .socials-link {
@@ -548,14 +556,6 @@ section-title - універсальний клас для h2 */
   padding-bottom: 20px;
   background-color: var(--primary-bg-color);
   border: 1px solid #eeeeee;
-}
-
-.team-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--primary-bg-color);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
 }
 
 .project-title {
