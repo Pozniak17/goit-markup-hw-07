@@ -205,6 +205,7 @@ img {
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--primary-bg-color);
   background-color: var(--accent);
   cursor: pointer;
@@ -221,7 +222,7 @@ img {
   padding: 10px 32px;
 }
 
-.hero__button:hover {
+.button:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -458,11 +459,7 @@ section-title - універсальний клас для h2 */
 /* section-title */
 
 /* Футер */
-.footer-logo {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+.page-footer__logo {
   color: var(--primary-bg-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -471,12 +468,12 @@ section-title - універсальний клас для h2 */
   text-decoration: none;
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
+.page-footer__logo:hover,
+.page-footer__logo:focus {
   color: var(--accent);
 }
 
-.footer-item:not(:first-child) {
+.footer__item:not(:first-child) {
   margin-top: 9px;
 }
 /* Стилі для Portfolio.html */
@@ -627,7 +624,7 @@ section-title - універсальний клас для h2 */
   padding-bottom: 60px;
 }
 
-.footer-address {
+.footer__address {
   text-decoration: none;
   color: var(--primary-bg-color);
   font-style: normal;
@@ -639,12 +636,12 @@ section-title - універсальний клас для h2 */
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-address:hover,
-.footer-address:focus {
+.footer__address:hover,
+.footer__address:focus {
   color: var(--accent);
 }
 
-.footer-link {
+.footer__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -656,8 +653,8 @@ section-title - універсальний клас для h2 */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: var(--accent);
 }
 
@@ -697,12 +694,12 @@ section-title - універсальний клас для h2 */
 
 /* Кнопки в футері */
 
-.footer-wrapper {
+.container--wrapper {
   display: flex;
   align-items: baseline;
 }
 
-.second-footer-title {
+.second-footer__title {
   color: var(--primary-bg-color);
   font-style: normal;
   font-weight: bold;
@@ -712,17 +709,17 @@ section-title - універсальний клас для h2 */
   text-transform: uppercase;
 }
 
-.second-footer-link {
+.second-footer__link {
   fill: var(--primary-bg-color);
 }
 
-.second-footer-list {
+.second-footer__list {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.second-footer-link {
+.second-footer__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -735,17 +732,17 @@ section-title - універсальний клас для h2 */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.second-footer-item:hover,
-.second-footer-item:focus {
+.second-footer__item:hover,
+.second-footer__item:focus {
   background-color: var(--accent);
   border-radius: 50%;
 }
 
-.second-footer-link:focus {
+.second-footer__link:focus {
   background-color: var(--accent);
 }
 
-.second-footer-item:not(:last-child) {
+.second-footer__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -757,11 +754,12 @@ section-title - універсальний клас для h2 */
   margin-left: auto;
 }
 
-.third-footer-wrap {
+.third-footer__wrap {
   margin-top: 20px;
+  display: flex;
 }
 
-.third-footer-input {
+.third-footer__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -775,11 +773,7 @@ section-title - універсальний клас для h2 */
   padding: 15px 16px;
 }
 
-.third-footer-wrap {
-  display: flex;
-}
-
-.third-footer-button {
+.third-footer__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -790,26 +784,9 @@ section-title - універсальний клас для h2 */
   height: 50px;
   border-radius: 4px;
   margin-left: 12px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  border: transparent;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.third-footer-button:hover,
-.third-footer-button:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.third-footer-icon {
+.third-footer__icon {
   margin-left: 10px;
 }
 

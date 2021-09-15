@@ -415,60 +415,60 @@
 
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="container footer-wrapper">
+      <div class="container container--wrapper">
         <div class="main-footer">
-          <a class="footer-logo" href="/"><span class="accent">Web</span>Studio</a>
+          <a class="logo page-footer__logo" href="/"><span class="logo__label">Web</span>Studio</a>
           <address class="footer-main-contacts">
             <ul class="footer list">
               <li>
                 <a
-                  class="footer-address"
+                  class="footer__address"
                   href="https://goo.gl/maps/6Ztoc1X5po4UeEXY9"
                   target="_blank"
                   rel="noreferrer noopener"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-item">
-                <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+              <li class="footer__item">
+                <a href="mailto:info@example.com" class="footer__link">info@example.com</a>
               </li>
-              <li class="footer-item">
-                <a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
+              <li class="footer__item">
+                <a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <div class="second-footer">
-          <p class="second-footer-title"><b>присоединяйтесь</b></p>
-          <ul class="second-footer-list list">
-            <li class="second-footer-item">
-              <a class="second-footer-link" href="">
-                <svg class="second-footer-icon" width="20" height="20">
+          <p class="second-footer__title"><b>присоединяйтесь</b></p>
+          <ul class="second-footer__list list">
+            <li class="second-footer__item">
+              <a class="second-footer__link" href="">
+                <svg class="second-footer__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="second-footer-item">
-              <a class="second-footer-link" href="">
-                <svg class="second-footer-icon" width="20" height="20">
+            <li class="second-footer__item">
+              <a class="second-footer__link" href="">
+                <svg class="second-footer__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="second-footer-item">
-              <a class="second-footer-link" href="">
-                <svg class="second-footer-icon" width="20" height="20">
+            <li class="second-footer__item">
+              <a class="second-footer__link" href="">
+                <svg class="second-footer__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="second-footer-item">
-              <a class="second-footer-link" href="">
-                <svg class="second-footer-icon" width="20" height="20">
+            <li class="second-footer__item">
+              <a class="second-footer__link" href="">
+                <svg class="second-footer__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -477,21 +477,25 @@
         </div>
 
         <div class="third-footer">
-          <label class="second-footer-title" for="subscribe"><b>Подпишитесь на рассылку</b> </label>
-          <div class="third-footer-wrap">
-            <input
-              class="third-footer-input"
-              type="email"
-              name="email"
-              id="subscribe"
-              placeholder="E-mail"
-            />
-            <button class="third-footer-button" type="submit">
-              Подписаться<svg class="third-footer-icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-footer-icon"></use>
-              </svg>
-            </button>
-          </div>
+          <form class="third-footer__form" action="#">
+            <label class="second-footer__title" for="subscribe"
+              ><b>Подпишитесь на рассылку</b>
+            </label>
+            <div class="third-footer__wrap">
+              <input
+                class="third-footer__input"
+                type="email"
+                name="email"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+              <button class="button third-footer__button" type="submit">
+                Подписаться<svg class="third-footer__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-footer-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
