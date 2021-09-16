@@ -830,7 +830,7 @@ section-title - універсальний клас для h2 */
   flex-direction: column;
 }
 
-.modal-title {
+.modal-form__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 20px;
@@ -840,12 +840,12 @@ section-title - універсальний клас для h2 */
   margin-bottom: 12px;
 }
 
-.input-wrap {
+.modal-form__wrap {
   display: block;
   position: relative;
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -854,11 +854,11 @@ section-title - універсальний клас для h2 */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-field {
+.modal-form__field {
   margin-bottom: 15px;
 }
 
-.model-form-label {
+.model-form__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -875,25 +875,25 @@ section-title - універсальний клас для h2 */
   border: transparent;
 }
 
-.modal-form-input:hover + .modal-form-icon,
-.modal-form-input:focus + .modal-form-icon {
+.modal-form__input:hover + .modal-form__icon,
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--accent);
 }
 
-.modal-comment:hover::placeholder,
-.modal-comment:focus::placeholder {
+.modal-form__comment:hover::placeholder,
+.modal-form__comment:focus::placeholder {
   color: #2196f3;
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
+.modal-form__comment:hover,
+.modal-form__comment:focus {
   border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.modal-comment:hover .modal-check-label,
-.modal-comment:focus .modal-check-label {
+.modal-form__comment:hover .check-label,
+.modal-form__comment:focus .check-label {
   display: flex;
   align-items: center;
   width: 100%;
@@ -917,7 +917,7 @@ section-title - універсальний клас для h2 */
 }
 /* Фокусы */
 
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -925,7 +925,7 @@ section-title - універсальний клас для h2 */
   cursor: pointer;
 }
 
-.modal-comment {
+.modal-form__comment {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -934,7 +934,7 @@ section-title - універсальний клас для h2 */
   resize: none;
 }
 
-.modal-comment::placeholder {
+.modal-form__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -971,7 +971,7 @@ section-title - універсальний клас для h2 */
   margin-left: 5px;
 }
 
-.model-form-text {
+.model-form__text {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -990,7 +990,7 @@ section-title - універсальний клас для h2 */
   color: #757575;
 }
 
-.modal-form-input:focus + .model-form-label {
+.modal-form__input:focus + .model-form__label {
   color: var(--accent);
 }
 
