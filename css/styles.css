@@ -521,7 +521,8 @@ section-title - універсальний клас для h2 */
   margin-right: 8px;
 }
 /* project-set */
-.project-set {
+
+.project {
   display: flex;
   flex-wrap: wrap;
 
@@ -529,7 +530,7 @@ section-title - універсальний клас для h2 */
   margin-left: -30px;
 }
 
-.project-set > .item {
+.project__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -541,12 +542,26 @@ section-title - універсальний клас для h2 */
   overflow: hidden;
 }
 
-.project-link:hover .project-thumb-text,
-.project-link:focus .project-thumb-text {
+.project__link:hover .project-thumb__text,
+.project__link:focus .project-thumb__text {
   transform: translateY(0%);
 }
 
-.project-thumb-text {
+.project__link {
+  display: block;
+  text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__link:hover,
+.project__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.project-thumb__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -570,20 +585,6 @@ section-title - універсальний клас для h2 */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link {
-  display: block;
-  text-decoration: none;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16),
-    0px 4px 4px rgba(0, 0, 0, 0.06);
-}
-
 .project-container {
   padding-left: 24px;
   padding-right: 24px;
@@ -593,7 +594,7 @@ section-title - універсальний клас для h2 */
   border: 1px solid #eeeeee;
 }
 
-.project-title {
+.project__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -602,7 +603,7 @@ section-title - універсальний клас для h2 */
   margin-bottom: 4px;
 }
 
-.project-text {
+.project__text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
