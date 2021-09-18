@@ -56,17 +56,17 @@ img {
   padding-right: 15px;
 }
 
-/* page-header */
+/* Logo */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__сontainer {
+.wrapper {
   display: flex;
   align-items: center;
 }
 
-.wrapper {
+.page-header__сontainer {
   display: flex;
   align-items: center;
 }
@@ -150,18 +150,14 @@ img {
   bottom: -1px;
 }
 
+/* Контакти */
 .contact {
   display: flex;
   margin-left: auto;
 }
 
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 /* Псевдокласс соседа - даётся только между соседом */
-.contact__item + .contact__item {
+.contact .contact__item + .contact__item {
   margin-left: 50px;
 }
 
@@ -186,6 +182,11 @@ img {
 .contact__link:hover,
 .contact__link:focus {
   color: var(--accent);
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Стилі для index.html */
