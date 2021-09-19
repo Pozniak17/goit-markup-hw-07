@@ -246,4 +246,57 @@ img {
 .hero__button {
   padding: 10px 32px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__item {
+  width: 270px;
+}
+
+.section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.title {
+  color: #212121;
+  font-weight: 700;
+}
+
+.section__name {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
 /*# sourceMappingURL=main.css.map */
