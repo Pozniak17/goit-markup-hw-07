@@ -187,12 +187,21 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  & .exit-icon:hover,
+  & .exit-icon:focus {
+    fill: $accent;
+    border-color: $accent;
+  }
 }
 
-.exit-button:hover,
-.exit-button:focus,
-.exit-button .exit-icon:hover,
-.exit-button .exit-icon:focus {
-  fill: $accent;
-  border-color: $accent;
-}
+// Код вище це код
+// .exit-button:hover,
+// .exit-button:focus,
+// .exit-button .exit-icon:hover,
+// .exit-button .exit-icon:focus {
+//   fill: var(--accent);
+//   border-color: var(--accent);
+// }

@@ -1128,8 +1128,7 @@ section-title - універсальний клас для h2 */
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.exit-button:hover,
-.exit-button:focus,
+.exit-button:hover, .exit-button:focus,
 .exit-button .exit-icon:hover,
 .exit-button .exit-icon:focus {
   fill: #2196f3;
