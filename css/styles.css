@@ -191,6 +191,24 @@ img {
 
 /* Стилі для index.html */
 /* Hero */
+.hero {
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2f303a;
+}
+
 .hero__title {
   color: var(--primary-bg-color);
   font-weight: 900;
@@ -230,9 +248,7 @@ img {
 
 /* центрируем через родительский элемент 
 секциию hero(все элементы внутри приймут text-align:center)  */
-.hero {
-  text-align: center;
-}
+
 /* Features */
 .section {
   padding-top: 94px;
@@ -658,21 +674,6 @@ section-title - універсальний клас для h2 */
 }
 
 /* Колір секції в index.html */
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #2f303a;
-}
 
 /* Секція Features картки через before(без ховера) */
 
