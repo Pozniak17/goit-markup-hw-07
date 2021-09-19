@@ -247,6 +247,25 @@ img {
   padding: 10px 32px;
 }
 
+.third-footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -641,5 +660,45 @@ section-title - універсальний клас для h2 */
 
 .main-footer {
   margin-right: 70px;
+}
+
+.third-footer {
+  margin-left: auto;
+}
+
+.third-footer__wrap {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third-footer__input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+}
+
+.footer-input input::-webkit-input-placeholder {
+  padding: 15px 16px;
+}
+
+.footer-input input:-ms-input-placeholder {
+  padding: 15px 16px;
+}
+
+.footer-input input::-ms-input-placeholder {
+  padding: 15px 16px;
+}
+
+.footer-input input::placeholder {
+  padding: 15px 16px;
+}
+
+.third-footer__icon {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -23,3 +23,16 @@
 .hero__button {
   padding: 10px 32px;
 }
+
+.third-footer__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $primary-bg-color;
+  background-color: $accent;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
