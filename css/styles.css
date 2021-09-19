@@ -493,6 +493,52 @@ section-title - універсальний клас для h2 */
 .footer__item:not(:first-child) {
   margin-top: 9px;
 }
+
+/* Footer address */
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__address {
+  text-decoration: none;
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  display: block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address:hover,
+.footer__address:focus {
+  color: var(--accent);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--accent);
+}
+
+.footer-main-contacts {
+  margin-top: 20px;
+}
+
 /* Стилі для Portfolio.html */
 /* Button */
 
@@ -626,51 +672,6 @@ section-title - універсальний клас для h2 */
   line-height: 1.88;
   /* margin-bottom: 20px;
   margin-left: 24px; */
-}
-
-/* Footer address */
-.page-footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer__address {
-  text-decoration: none;
-  color: var(--primary-bg-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  display: block;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__address:hover,
-.footer__address:focus {
-  color: var(--accent);
-}
-
-.footer__link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--accent);
-}
-
-.footer-main-contacts {
-  margin-top: 20px;
 }
 
 /* Колір секції в index.html */
