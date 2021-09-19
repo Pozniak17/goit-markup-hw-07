@@ -539,6 +539,104 @@ section-title - універсальний клас для h2 */
   margin-top: 20px;
 }
 
+/* Кнопки в футері */
+
+.container--wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.second-footer__title {
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.second-footer__link {
+  fill: var(--primary-bg-color);
+}
+
+.second-footer__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.second-footer__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.second-footer__item:hover,
+.second-footer__item:focus {
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+.second-footer__link:focus {
+  background-color: var(--accent);
+}
+
+.second-footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main-footer {
+  margin-right: 70px;
+}
+
+.third-footer {
+  margin-left: auto;
+}
+
+.third-footer__wrap {
+  margin-top: 20px;
+  display: flex;
+}
+
+.third-footer__input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding-left: 16px;
+}
+
+.footer-input input::placeholder {
+  padding: 15px 16px;
+}
+
+.third-footer__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--primary-bg-color);
+  background-color: var(--accent);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.third-footer__icon {
+  margin-left: 10px;
+}
+
 /* Стилі для Portfolio.html */
 /* Button */
 
@@ -688,104 +786,6 @@ section-title - універсальний клас для h2 */
   background-position: center;
   margin-bottom: 30px;
 } */
-
-/* Кнопки в футері */
-
-.container--wrapper {
-  display: flex;
-  align-items: baseline;
-}
-
-.second-footer__title {
-  color: var(--primary-bg-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.second-footer__link {
-  fill: var(--primary-bg-color);
-}
-
-.second-footer__list {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.second-footer__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.second-footer__item:hover,
-.second-footer__item:focus {
-  background-color: var(--accent);
-  border-radius: 50%;
-}
-
-.second-footer__link:focus {
-  background-color: var(--accent);
-}
-
-.second-footer__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.main-footer {
-  margin-right: 70px;
-}
-
-.third-footer {
-  margin-left: auto;
-}
-
-.third-footer__wrap {
-  margin-top: 20px;
-  display: flex;
-}
-
-.third-footer__input {
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  padding-left: 16px;
-}
-
-.footer-input input::placeholder {
-  padding: 15px 16px;
-}
-
-.third-footer__button {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: var(--primary-bg-color);
-  background-color: var(--accent);
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  margin-left: 12px;
-}
-
-.third-footer__icon {
-  margin-left: 10px;
-}
 
 /* Модальне вікно */
 .backdrop {
